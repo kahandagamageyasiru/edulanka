@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher UI - Course Page</title>
+    <link rel="stylesheet" type="text/css" href="tec.css">
+</head>
+<body>
+    <header>
+        <h1>LMS -  Teacher Interface</h1>
+        <h2>Environmental Studies - Grade 4</h2>
+    </header>
+
+    <main>
+        <section id="create-quiz">
+            <h2>Create Quiz</h2>
+            <!-- Add form elements to create a quiz -->
+            <form>
+                <!-- Quiz details input fields -->
+                <input type="text" placeholder="Quiz Title" required>
+                <textarea placeholder="Quiz Description"></textarea>
+
+                <!-- Add questions and options input fields here -->
+
+                <button type="submit">Create Quiz</button>
+            </form>
+        </section>
+
+        <section id="upload-pdf">
+            <h2>Upload PDF</h2>
+            <!-- Add form elements to upload a PDF -->
+            <form>
+                <input type="file" accept=".pdf" required>
+                <button type="submit">Upload PDF</button>
+            </form>
+        </section>
+
+        <section id="upload-links">
+            <h2>Upload Links</h2>
+            <!-- Add form elements to upload links related to the course -->
+            <form>
+                <input type="text" placeholder="Link Title" required>
+                <input type="url" placeholder="URL" required>
+                <button type="submit">Upload Link</button>
+            </form>
+        </section>
+
+        <section id="give-marks-feedback">
+            <h2>Give Marks and Feedback</h2>
+            <!-- Add form elements to give marks and feedback to students -->
+            <form>
+                <input type="text" placeholder="Student Name" required>
+                <input type="number" placeholder="Marks" min="0" max="100" required>
+                <textarea placeholder="Feedback"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
